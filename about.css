@@ -2,13 +2,13 @@ body {
     margin: 0;
     padding: 0;
     }
-	.innerWindow{
+.innerWindow{
     background: #fff;
     box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
     height: 300px;
     overflow-y: auto;
 	}
-	#start_button{
+#start_button{
     height: 100%;
 	margin-top: 0px;
     margin-left: 3px;
@@ -19,20 +19,20 @@ body {
     padding-left: 6px;
     padding-right: 9px;
 }
-	#start_button p{
+#start_button p{
     margin: 0;
     margin-top: 3px;
     font-size: 18px;
     font-weight: bold;
 	}
-	#windows_icon{
+#windows_icon{
     background-image: url(/src/windows_slanted-1.png);
     background-repeat: no-repeat;
     background-size: cover;
 	height: 30px;
     width: 30px;
 	}
-	.time-z{
+.time-z{
     display: flex;
 	flex-direction: row;
     justify-content: flex-end;
@@ -83,3 +83,7 @@ body {
     .nav-bar p:hover{
         box-shadow: inset -1px -1px #161616, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     }
+#mydiv{
+    position: relative;
+    top: 250px; left: 400px; width: 750px;
+}
