@@ -127,3 +127,41 @@ setInterval(function(){updateTimes()}, 1000)
     			}
 			}	}
 			</script>-->
+
+      let comparComputer = 0;
+var button = document.getElementById("myComputer");
+var div = document.getElementById("mydiv");
+
+// Add event listener to the button
+button.addEventListener("click", function() {
+    // Change the display property of the div
+    div.style.display = "block";
+    div.style.position = 'absolute';
+    comparComputer = 1;
+});
+
+__initialWindowLayout: {
+  main: { position: { x: 0, y: 0 } },
+  equalizer: { position: { x: 0, y: 116 } },
+  playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
+  milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
+}
+
+
+<div id="app" id="musicdiv" style="height: 100vh; margin-right: 200px; display: none;">
+  <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+  <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+  <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+  <script src="./winamp.js"></script></div>
+
+  let comparMusic = 0;
+var musicbutton = document.getElementById("myMusic");
+var mdiv = document.getElementById("musicdiv");
+
+// Add event listener to the button
+musicbutton.addEventListener("click", function() {
+    // Change the display property of the div
+    mdiv.style.display = "block";
+    mdiv.style.position = 'absolute';
+    comparMusic = 1;
+});

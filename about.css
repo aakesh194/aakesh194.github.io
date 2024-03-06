@@ -7,6 +7,7 @@ body {
     box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
     height: 300px;
     overflow-y: auto;
+    letter-spacing: 0.5px;
 	}
 #start_button{
     height: 100%;
@@ -86,4 +87,15 @@ body {
 #mydiv{
     position: relative;
     top: 250px; left: 400px; width: 750px;
+    z-index: 1000;
+}
+
+.name{
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+#app{
+    position: absolute;
+    display: block;
 }
