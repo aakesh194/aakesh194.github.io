@@ -53,13 +53,12 @@ function dragElement(elmnt) {
 
 let comparComputer = 0;
 var button2 = document.getElementById("myComputer");
-var div = document.getElementById("mydiv");
+var div2 = document.getElementById("mydiv");
 
 // Add event listener to the button
 button2.addEventListener("click", function() {
     // Change the display property of the div
-    div.style.display = "block";
-    div.style.position = 'absolute';
+    div2.style.display = "block";
+    div2.style.position = 'absolute';
     comparComputer = 1;
 });
-

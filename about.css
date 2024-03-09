@@ -95,6 +95,7 @@ body {
     margin: 0;
     text-align: center;
 }
+
 #app{
-    position: absolute;
+    position: absolute; top: 60%; left: 40%; width: 100%;
 }

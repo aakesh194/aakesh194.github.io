@@ -7,16 +7,17 @@
 	<link rel="stylesheet" href="about.css">
 </head>
 <body>
-	<div id="app" id="musicamp" style="height: 100vh; margin-right: 200px;">
+	<div id="app"></div>
 		<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
 		<script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
 		<script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
-		<script src="./winamp.js"></script></div>
+		<script src="./winamp.js"></script></div></div></div>
 
-	<img src="src/computer-icon.png" id="myComputer" style="position: block; height: 100px;cursor: pointer;">
-	<img src="src/pngaaa.com-519993.png" id="myMusic" style="position: block; height: 75px; cursor: pointer;">
+	<img src="src/computer-icon.png" id="myComputer" style="position:absolute, grid; height: 100px; width: 100px;cursor: pointer;">
+	<img src="src/music.png" id="webamp-icon" style="position:absolute, grid; margin-top:0px; height: 120px;width: 110px; cursor: pointer;">
 
-	<p style="margin-left: 17px; margin-top: -1%; font-family: Pixelated MS Sans Serif;">My Computer</p>
+	<p style="margin-left: 17px; margin-top: -1%; font-family: Pixelated MS Sans Serif; position: grid">My Computer</p>
+	<p style="margin-left: 140px; margin-top: -1.55%; font-family: Pixelated MS Sans Serif; position: grid">Music</p>
 	<div class="window" id="mydiv" style="width:800px; display: none;" >
 		<div class="title-bar" id="mydivheader">
 		  <div class="title-bar-text">My Computer</div>

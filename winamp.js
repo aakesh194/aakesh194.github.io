@@ -1,5 +1,6 @@
 const Webamp = window.Webamp;
 const webamp = new Webamp({
+allow: "autoplay",
     initialTracks: [
         {
             metaData: {
@@ -55,14 +56,15 @@ const webamp = new Webamp({
         },
         butterchurnOpen: true
     },
-    __initialWindowLayout: {
-        main: { position: { x: 0, y: 0 } },
-        equalizer: { position: { x: 0, y: 116 } },
-        playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
-        milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
-      }
-    
 });
 
-// Returns a promise indicating when it's done loading.
-webamp.renderWhenReady(document.getElementById("app"));
+const container = document.getElementById('app');
+webamp.renderWhenReady(container).then(() => {
+    console.log('rendered webamp!');
+});
+
+webamp.onClose(() => {
+    document.getElementById('webamp-icon').addEventListener('click', () => {
+        webamp.reopen();
+    });
+})

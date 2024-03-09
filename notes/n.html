@@ -141,7 +141,7 @@ button.addEventListener("click", function() {
 });
 
 __initialWindowLayout: {
-  main: { position: { x: 0, y: 0 } },
+  main: { position: { x: 0, y: 100 } },
   equalizer: { position: { x: 0, y: 116 } },
   playlist: { position: { x: 0, y: 232 }, size: [0, 4] },
   milkdrop: { position: { x: 275, y: 0 }, size: [7, 12] }
@@ -165,3 +165,14 @@ musicbutton.addEventListener("click", function() {
     mdiv.style.position = 'absolute';
     comparMusic = 1;
 });
+
+
+
+
+webamp.renderWhenReady(document.getElementById("app"));
+
+webamp.onClose(() => {
+    document.getElementById('webamp-icon').addEventListener('click', () => {
+        webamp.reopen();
+    });
+})
