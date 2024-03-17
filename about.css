@@ -2,13 +2,6 @@ body {
     margin: 0;
     padding: 0;
     }
-.innerWindow{
-    background: #fff;
-    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-    height: 300px;
-    overflow-y: auto;
-    letter-spacing: 0.5px;
-	}
 #start_button{
     height: 100%;
 	margin-top: 0px;
@@ -86,9 +79,15 @@ body {
     }
 #mydiv{
     position: relative;
-    top: 250px; left: 400px; width: 750px;
+    top: 450px; left: 500px;
+    z-index: 100;
+}
+#myContact{
+    position: relative;
+    top: 400px; left: 20px;
     z-index: 1000;
 }
+
 
 .name{
     color: black;
@@ -98,4 +97,35 @@ body {
 
 #app{
     position: absolute; top: 60%; left: 40%; width: 100%;
+}
+.hidden{
+    display: none;
+}
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing:0em;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .white-highlight:hover {
+    background-color: white;
 }

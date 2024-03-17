@@ -9,9 +9,6 @@ setInterval(function () {
     updateTimes();
 }, 1000);
 
-
-dragElement(document.getElementById("mydiv"));
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -51,6 +48,8 @@ function dragElement(elmnt) {
   }
 }
 
+dragElement(document.getElementById("mydiv"));
+
 let comparComputer = 0;
 var button2 = document.getElementById("myComputer");
 var div2 = document.getElementById("mydiv");
@@ -62,3 +61,40 @@ button2.addEventListener("click", function() {
     div2.style.position = 'absolute';
     comparComputer = 1;
 });
+
+var div3 = document.getElementById("startwindow");
+div3.classList.toggle("hidden");
+document.getElementById("start_button").addEventListener("click", function() {
+  if (div3.classList.contains("hidden")){
+    div3.classList.remove("hidden");
+  } else {
+    div3.classList.add("hidden");
+  }
+});
+
+dragElement(document.getElementById("myContact"));
+
+let comparContact = 0;
+var button3 = document.getElementById("contact-icon");
+var div10 = document.getElementById("myContact");
+
+// Add event listener to the button
+button3.addEventListener("click", function() {
+    // Change the display property of the div
+    div10.style.display = 'block'
+    div10.style.position = 'absolute';
+    comparContact = 1
+});
+
+var button4 = document.getElementById("close");
+button4.addEventListener("click", function() {
+  // Change the display property of the div
+  mydiv.style.display = "none";
+});
+
+var button5 = document.getElementById("closed");
+button5.addEventListener("click", function() {
+	// Change the display property of the div
+	myContact.style.display = "none";
+  });
+  

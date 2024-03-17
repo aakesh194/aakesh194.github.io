@@ -12,11 +12,11 @@ allow: "autoplay",
         },
         {
             metaData: {
-                title: "apple pie",
-                artist: "t.$.",
+                title: "one dance",
+                artist: "drake",
             },
-            url: "https://ia801405.us.archive.org/15/items/ApplePieTravisScott/Apple%20Pie%20-%20Travis%20Scott.mp3",
-            duration: 219,
+            url: "https://ia601906.us.archive.org/17/items/onedance_drake/12.%20One%20Dance%20%28Ft.%20Wizkid%20%26%20Kyla%29.mp3",
+            duration: 173,
         },
         {
             metaData: {
@@ -28,20 +28,28 @@ allow: "autoplay",
         },
         {
             metaData: {
-                title: "swangin on westheimer",
-                artist: "d.t.",
+                title: "ghost town",
+                artist: "ye",
             },
-            url: "https://archive.org/download/don-toliver-life-of-a-don-2021/Life%20Of%20A%20Don/07-Swangin%E2%80%99%20On%20Westheimer.mp3",
-            duration: 288,
+            url: "https://ia802208.us.archive.org/23/items/kanyewest_202202/Kanye%20West/Unreleased%20%28ye%20Era%29/Ghost%20Town%20%28SNL%20Edit%29%20%5Bfeat.%20Kid%20Cudi%20%26%20070%20Shake%5D.mp3",
+            duration: 271,
         },
         {
             metaData: {
-                title: "lost souls",
-                artist: "b.k & d.t.",
+                title: "moon",
+                artist: "dt + kc",
             },
-            url: "https://ia804703.us.archive.org/23/items/baby-keem-the-melodic-blue-deluxe/Deluxe/05-killstreaks%20%28Ft.%20Don%20Toliver%20%26%20PinkPantheress%29.mp3",
-            duration: 270,
-        }
+            url: "https://ia802208.us.archive.org/23/items/kanyewest_202202/Kanye%20West/DONDA/02%20Moon%20%28feat.%20Don%20Toliver%20%26%20Kid%20Cudi%29.mp3",
+            duration: 155,
+        },
+        {
+            metaData: {
+                title: "rip screw",
+                artist: "dt + kc",
+            },
+            url: "src/mp3/Travis Scott - R.I.P. SCREW (Clean) Ft. Swae Lee (ASTROWORLD).mp4",
+            duration: 185,
+        },
     ],
     __butterchurnOptions: {
         importButterchurn: () => Promise.resolve(window.butterchurn),
